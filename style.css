@@ -1,4 +1,3 @@
-/* Reset básico e estilos globais */
 * {
     margin: 0;
     padding: 0;
@@ -27,7 +26,6 @@ body {
     color: var(--text-color);
 }
 
-/* Estilo da Header */
 .header {
     position: fixed;
     width: 100%;
@@ -76,7 +74,6 @@ span {
     color: var(--main-color);
 }
 
-/* Estilos das Seções */
 section {
     min-height: 100vh;
     padding: 10rem 12%;
@@ -127,7 +124,6 @@ section {
                 0 0 100px var(--main-color);
 }
 
-/* Estilo dos Ícones Sociais */
 .social-icons a {
     display: inline-flex;
     justify-content: center;
@@ -149,7 +145,6 @@ section {
     box-shadow: 0 0 25px var(--main-color);
 }
 
-/* Estilos dos Botões */
 .btn-group {
     display: flex;
     gap: 1.5rem;
@@ -187,7 +182,6 @@ section {
     color: black;
 }
 
-/* Seção Sobre */
 .about {
     display: flex;
     justify-content: center;
@@ -235,7 +229,6 @@ section {
     background-color: var(--bg-color);
 }
 
-/* Seção Serviços */
 .services {
     background-color: var(--bg-color);
     color: black;
@@ -299,7 +292,6 @@ section {
     line-height: 1.7;
 }
 
-/* Seção de Contato */
 .contact {
     background-color: var(--second-bg-color);
 }
@@ -374,7 +366,7 @@ footer .copyright{
         border-left: 2px solid var(--main-color);
         border-bottom: 2px solid var(--main-color);
         border-bottom-left-radius: 2rem;
-        display: none; /* Adicionei para garantir que a navbar esteja oculta por padrão */
+        display: none; 
     }
 
     .navbar a {
@@ -431,7 +423,6 @@ footer .copyright{
     border-radius: 10px;
 }
 
-/* Ajustes para tablets (até 768px) */
 @media (max-width: 768px) {
     html {
         font-size: 50%;
@@ -465,8 +456,6 @@ footer .copyright{
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 }
-
-/* Ajustes para smartphones (até 480px) */
 @media (max-width: 480px) {
     html {
         font-size: 45%;
