@@ -3,148 +3,370 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Kevin</title>
+    <title>Portfólio | Kevin Andrew</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <!-- Header/Navigation -->
     <header class="header">
-        <a href="#home" class="logo">Kevin <span>Andrew</span></a>
-        <i class="bx bx-menu" id="menu-icon"></i>
         <nav class="navbar">
-            <a href="#home">Início</a>
-            <a href="#about">Sobre</a>
-            <a href="#services">Sobre o Portfólio</a>
-            <a href="#contact">Entrar em contato</a>
+            <a href="#home" class="logo">Kevin</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#projects" class="nav-link">Work</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
 
-    <section class="home" id="home">
-        <div class="home-content">
-            <h1>Olá, sou <span>Kevin</span></h1>
-            <h3>Sou um <span>Desenvolvedor Backend</span></h3>
-            <p>Estudante de Análise e Desenvolvimento de Sistemas pela faculdade FAM, com forte interesse no desenvolvimento de sites e aplicativos. Atualmente, estou dando meus primeiros passos na criação de um portfólio profissional, onde apresento projetos voltados ao desenvolvimento web e mobile, buscando sempre aprimorar minhas habilidades e expandir meu conhecimento em tecnologias inovadoras.</p>
-            <div class="social-icons">
-                <a href="https://github.com/Orinarys" target="_blank" class="btn" aria-label="GitHub">
-                    <i class="bx bxl-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/kevin-andrew-389b6923a/" target="_blank" class="btn" aria-label="LinkedIn">
-                    <i class="bx bxl-linkedin-square"></i>
-                </a>
-                <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwRrrpfVVtcdjkrGJghwgmQKmxnWKTRXDDhzpNXPjZDkrtDFwkPkDgHrmHnXScdmqRCbFsw" target="_blank" class="btn" aria-label="gmail">
-                    <i class='bx bxl-gmail'></i>
-                </a>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Olá,<br>Eu sou <span class="highlight">Kevin Andrew</span></h1>
+                <p class="typing-text">Sou um <span class="typed-text"></span></p>
+                <p class="hero-description">
+                    Estudante de Análise e Desenvolvimento de Sistemas pela faculdade FAM, com forte interesse no desenvolvimento de sites e aplicativos. Atualmente, estou dando meus primeiros passos na criação de um portfólio profissional.
+                </p>
+                <a href="#about" class="btn-primary">Sobre Mim</a>
+                
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                    <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                </div>
             </div>
-            <div class="btn-group">
-                <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwRrrpfVVtcdjkrGJghwgmQKmxnWKTRXDDhzpNXPjZDkrtDFwkPkDgHrmHnXScdmqRCbFsw" target="_blank" class="btn">Contratar</a>
-                <a href="#contact" class="btn">Entrar em contato</a>
+            <div class="hero-image">
+                <div class="profile-circle">
+                    <img src="1742857004067.jpeg" alt="Kevin Andrew" class="profile-img">
+                </div>
             </div>
         </div>
-
-        <div class="home-img">
-            <img src="WhatsApp Image .jpg" alt="Imagem de Kevin Andrew">
-        </div>
+        <div class="geometric-bg"></div>
     </section>
 
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="WhatsApp Image .jpg" alt="Imagem de Kevin Andrew">
-        </div>
-        <div class="about-content">
-            <h2>Sobre <span>Mim</span></h2>
-            <p>Sou estudante de Análise e Desenvolvimento de Sistemas na FAM e trabalho como assistente comercial na DOX BRASIL. No meu dia a dia, desenvolvo projetos e sistemas para auxiliar os vendedores da unidade, além de ajudar nas demais demandas que surgem. Essa experiência tem sido fundamental para colocar em prática o que aprendo na faculdade, enquanto desenvolvo minhas habilidades técnicas e busco soluções que realmente fazem a diferença no ambiente de trabalho.</p>
-            <a href="#" class="btn">Saiba mais</a>
-        </div>
-    </section>
-    
-    <section class="services" id="services">
-        <h2 class="heading">Sobre o Portfólio</h2>
-
-        <div class="services-container">
-            <div class="service-box">
-                <div class="service-info">
-                    <i class="bx bxs-devices"></i>
-                    <h4>Sobre o Portfólio</h4>
-                    <p>Este portfólio foi desenvolvido com HTML, CSS e JavaScript, apresentando um design responsivo e intuitivo. Ele inclui seções como "Sobre", "Projetos" e "Contato", além de integração com redes sociais e um formulário funcional para mensagens. É um reflexo das minhas habilidades iniciais no desenvolvimento web e um ponto de partida na minha trajetória profissional.
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title"><i class='bx bx-user'></i> Sobre <span class="highlight">Mim</span></h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="1742857004067.jpeg" alt="Kevin Andrew" class="about-img">
+                </div>
+                <div class="about-text">
+                    <h3>Eu sou Kevin</h3>
+                    <h4>Desenvolvedor Backend</h4>
+                    <p>
+                        Sou estudante do 4º semestre de Análise e Desenvolvimento de Sistemas na FAM e atuo como vendedor na DOX BRASIL. Além das atividades comerciais, também desenvolvo sistemas e projetos internos para otimizar os processos da equipe de vendas e colaborar com outras demandas operacionais da empresa.
                     </p>
-                </div>
-            </div>
-            
-            <div class="service-box">
-                <div class="service-info">
-                    <i class="bx bx-code"></i>
-                    <h4>Calculadora de IMC</h4>
-                    <img class = "Projects" src="IMC.png" alt="IMC">
-                    <p>Este projeto é uma calculadora de IMC desenvolvida com HTML, CSS e JavaScript, projetada para ser simples, intuitiva e responsiva. Ele permite que os usuários insiram seu peso (em quilogramas) e altura (em metros) para calcular seu Índice de Massa Corporal (IMC), exibindo o resultado diretamente na tela.</p>
-                        <a href="https://orinarys.github.io/IMC/" target="_blank" class="btn">Visualizar Projeto</a>
-                        <!-- Link para o código-fonte -->
-                        <a href="https://github.com/Orinarys/Projetos/tree/main/Projetos/IMC/assets" target="_blank" class="btn">Ver Código no GitHub</a>
-                </div>
-            </div>
-
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>Calculadora Simples com Histórico de Operações</h4>
-                    <img class = "Projects" src="calculadora.png" alt="Calculadora">
-                    <p>Este é um projeto de uma calculadora funcional desenvolvida com HTML, CSS e JavaScript. A interface é responsiva e projetada para ser intuitiva e de fácil uso. O objetivo principal deste projeto foi praticar a manipulação de eventos em JavaScript e a interação entre o HTML e o CSS.😊</p>
-                    <a href="https://orinarys.github.io/Calculadora/" target="_blank" class="btn">Visualizar Projeto</a>
-                    <!-- Link para o código-fonte -->
-                    <a href="https://github.com/Orinarys/Projetos/tree/main/Projetos/Calculadora" target="_blank" class="btn">Ver Código no GitHub</a>
+                    <p>
+                        Essa experiência tem sido fundamental para colocar em prática o que aprendo na faculdade, enquanto desenvolvo minhas habilidades técnicas e busco soluções que realmente fazem a diferença no ambiente de trabalho.
+                    </p>
+                    <div class="about-info">
+                        <p><span class="info-label">Email:</span> kevin@exemplo.com</p>
+                        <p><span class="info-label">Local:</span> São Paulo, Brasil</p>
+                    </div>
+                    <a href="#" class="btn-secondary">Currículo <i class='bx bx-download'></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="contact" id="contact">
-        <h2 class="heading">Entre em <span>Contato</span></h2>
-        <form action="https://formspree.io/f/xnnqndwl" method="POST">
-            <div class="input-group">
-                <div class="input-box">
-                    <input type="text" name="nome" placeholder="Nome Completo" required>
-                    <input type="email" name="email" placeholder="Email" required>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title"><i class='bx bx-code-alt'></i> Skills & <span class="highlight">Habilidades</span></h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class='bx bxl-html5'></i>
+                    <h3>HTML5</h3>
                 </div>
-        
-                <div class="input-box">
-                    <input type="tel" name="telefone" placeholder="Número de Telefone">
-                    <input type="text" name="assunto" placeholder="Assunto" required>
+                <div class="skill-card">
+                    <i class='bx bxl-css3'></i>
+                    <h3>CSS3</h3>
+                </div>
+                <div class="skill-card">
+                    <i class='bx bxl-javascript'></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card">
+                    <i class='bx bxl-python'></i>
+                    <h3>Python</h3>
+                </div>
+                <div class="skill-card">
+                    <i class='bx bxl-java'></i>
+                    <h3>Java</h3>
+                </div>
+                <div class="skill-card">
+                    <i class='bx bxs-data'></i>
+                    <h3>MySQL</h3>
+                </div>
+                <div class="skill-card">
+                    <i class='bx bxl-git'></i>
+                    <h3>Git</h3>
+                </div>
+                <div class="skill-card">
+                    <i class='bx bxl-github'></i>
+                    <h3>GitHub</h3>
                 </div>
             </div>
-        
-            <div class="input-group-2">
-                <textarea name="mensagem" cols="30" rows="10" placeholder="Sua Mensagem" required></textarea>
-                <input type="submit" class="btn" value="Enviar Mensagem" >
-            </div>
-        </form>
-        
+        </div>
     </section>
 
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title"><i class='bx bx-book'></i> Minha <span class="highlight">Educação</span></h2>
+            <p class="section-subtitle">A educação não é o aprendizado de fatos, mas o treinamento da mente para pensar.</p>
+            <div class="education-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Análise e Desenvolvimento de Sistemas</h3>
+                        <h4>Faculdade FAM</h4>
+                        <span class="timeline-date">Em andamento</span>
+                        <p>Curso superior focado no desenvolvimento de sistemas e aplicações, com ênfase em programação e análise de requisitos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title"><i class='bx bx-briefcase'></i> Projetos <span class="highlight">Desenvolvidos</span></h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/300x200/FF6B35/FFFFFF?text=IMC" alt="Calculadora IMC">
+                    </div>
+                    <div class="project-content">
+                        <h3>Calculadora de IMC</h3>
+                        <p>Calculadora de IMC desenvolvida com HTML, CSS e JavaScript, projetada para ser simples, intuitiva e responsiva.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn-project">Ver Projeto</a>
+                            <a href="#" class="btn-github"><i class='bx bxl-github'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/300x200/4A90E2/FFFFFF?text=Calc" alt="Calculadora">
+                    </div>
+                    <div class="project-content">
+                        <h3>Calculadora com Histórico</h3>
+                        <p>Calculadora funcional com histórico de operações, desenvolvida com HTML, CSS e JavaScript. Interface responsiva e intuitiva.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn-project">Ver Projeto</a>
+                            <a href="#" class="btn-github"><i class='bx bxl-github'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title"><i class='bx bx-briefcase'></i> <span class="highlight">Experiência</span></h2>
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="company-header">
+                            <img src="dox_brasil_logo.jpg" alt="DOX Brasil" class="company-logo">
+                            <div class="company-info">
+                                <h3>Vendedor</h3>
+                                <h4>DOX Brasil</h4>
+                                <span class="timeline-date">Mai 2025 - Atual · 3 meses</span>
+                            </div>
+                        </div>
+                        <ul class="job-description">
+                            <li>Atendimento consultivo a clientes da área industrial, construção civil e serralherias, oferecendo soluções em produtos de aço (chapas, vigas, tubos, entre outros)</li>
+                            <li>Prospecção ativa de novos clientes e manutenção da carteira existente</li>
+                            <li>Elaboração de orçamentos personalizados, com foco em competitividade e rentabilidade</li>
+                            <li>Negociação de preços, prazos e condições comerciais alinhadas com as políticas da empresa</li>
+                            <li>Acompanhamento de pedidos junto aos setores de produção e logística, garantindo entregas no prazo</li>
+                            <li>Pós-venda e fidelização de clientes por meio de suporte contínuo e relacionamento estratégico</li>
+                            <li>Atualização constante sobre especificações técnicas e tendências do mercado de aço</li>
+                            <li>Registro de atividades e acompanhamento de metas em sistemas de CRM e relatórios de desempenho</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="company-header">
+                            <img src="dox_brasil_logo.jpg" alt="DOX Brasil" class="company-logo">
+                            <div class="company-info">
+                                <h3>Assistente Comercial</h3>
+                                <h4>DOX Brasil</h4>
+                                <span class="timeline-date">Mar 2024 - Mai 2025 · 1 ano 3 meses</span>
+                            </div>
+                        </div>
+                        <ul class="job-description">
+                            <li>Criação de sistemas para os vendedores</li>
+                            <li>Treinamento aos novos vendedores</li>
+                            <li>Criação de conteúdo para redes sociais, blogs e e-mails</li>
+                            <li>Gestão de redes sociais e interação com o público</li>
+                            <li>Atendimento ao cliente (telefone, e-mail e presencial)</li>
+                            <li>Elaboração de orçamentos e propostas comerciais</li>
+                            <li>Atualização de informações no CRM (Customer Relationship Management)</li>
+                            <li>Suporte na prospecção de novos clientes</li>
+                            <li>Agendamento de reuniões e visitas para vendedores</li>
+                            <li>Acompanhamento de metas e resultados de vendas</li>
+                            <li>Elaboração de relatórios de vendas e performance</li>
+                            <li>Comunicação com outros departamentos (logística, financeiro, etc.)</li>
+                            <li>Pesquisa e seleção de fornecedores</li>
+                            <li>Negociação de preços e condições de pagamento</li>
+                            <li>Emissão de pedidos de compra</li>
+                            <li>Acompanhamento de prazos de entrega</li>
+                            <li>Fechamento de vendas</li>
+                            <li>Análise de concorrência e tendências de mercado</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="company-header">
+                            <img src="sams_club_logo.jpg" alt="Sam's Club" class="company-logo">
+                            <div class="company-info">
+                                <h3>Operador de Loja</h3>
+                                <h4>Sam's Club</h4>
+                                <span class="timeline-date">Mar 2023 - Mar 2024 · 1 ano 1 mês</span>
+                            </div>
+                        </div>
+                        <ul class="job-description">
+                            <li>Coleta de produtos</li>
+                            <li>Empacotamento de mercadorias</li>
+                            <li>Atendimento ao cliente</li>
+                            <li>Faturamento de compras</li>
+                            <li>Sistema de compras</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="company-header">
+                            <img src="sams_club_logo.jpg" alt="Sam's Club" class="company-logo">
+                            <div class="company-info">
+                                <h3>Jovem Aprendiz</h3>
+                                <h4>Sam's Club</h4>
+                                <span class="timeline-date">Out 2021 - Mar 2023 · 1 ano 6 meses</span>
+                            </div>
+                        </div>
+                        <ul class="job-description">
+                            <li>Acerto do ponto eletrônico dos funcionários</li>
+                            <li>Lançamento de escalas de trabalho</li>
+                            <li>Atendimento aos funcionários e público geral via telefone, e-mail e presencialmente</li>
+                            <li>Agendamento de exames ASO</li>
+                            <li>Atualização do cadastro de funcionários</li>
+                            <li>Processamento de relatórios (horas extras, compliances, falta de marcações, etc)</li>
+                            <li>Confecção de crachás e carteirinhas de empilhadeira</li>
+                            <li>Organização de uniformes e EPIs</li>
+                            <li>Organização de festas comemorativas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title"><i class='bx bx-envelope'></i> Entre em <span class="highlight">Contato</span></h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Portfólio do Kevin</h3>
+                    <p>Obrigado por visitar meu portfólio pessoal. Conecte-se comigo através das redes sociais.</p>
+                    <p>Continue crescendo 🚀. Conecte-se comigo!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class='bx bx-phone'></i>
+                            <span>+55 (11) XXX-XXX-XXXX</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class='bx bx-envelope'></i>
+                            <span>kevin@exemplo.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class='bx bx-location-plus'></i>
+                            <span>São Paulo, Brasil</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Seu Nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Seu Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
-        <div class="social-icons">
-            <a href="https://github.com/Orinarys" target="_blank" class="btn" aria-label="GitHub">
-                <i class="bx bxl-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/kevin-andrew-389b6923a/" target="_blank" class="btn" aria-label="LinkedIn">
-                <i class="bx bxl-linkedin-square"></i>
-            </a>
-            <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwRrrpfVVtcdjkrGJghwgmQKmxnWKTRXDDhzpNXPjZDkrtDFwkPkDgHrmHnXScdmqRCbFsw
-            " target="_blank" class="btn" aria-label="gmail">
-                <i class="bx bxl-gmail"></i>
-            </a>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#projects">Work</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                        <a href="#" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                        <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+                        <a href="#" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Desenvolvido com ❤️ por <a href="#home">Kevin Andrew</a></p>
+            </div>
         </div>
-
-        <ul class="list">
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#services">Projetos</a></li>
-            <li><a href="#about">Sobre Mim</a></li>
-            <li><a href="#contact">Entre em Contato</a></li>
-        </ul>
-
-        <p class="copyright">
-            © Kevin Andrew | Todos os Direitos Reservados
-        </p>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
+
