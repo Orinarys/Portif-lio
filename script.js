@@ -50,7 +50,7 @@ window.addEventListener('scroll', () => {
 
 // Typing animation for hero section
 const typedTextSpan = document.querySelector('.typed-text');
-const textArray = ['Desenvolvedor Backend', 'Estudante de ADS', 'Assistente Comercial'];
+const textArray = ['Desenvolvedor Backend', 'Estudante de ADS', 'Vendedor Junior'];
 const typingDelay = 200;
 const erasingDelay = 100;
 const newTextDelay = 2000;
@@ -101,7 +101,7 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe elements for scroll animations
 document.addEventListener('DOMContentLoaded', () => {
-    const animateElements = document.querySelectorAll('.skill-card, .project-card, .timeline-item');
+    const animateElements = document.querySelectorAll('.skill-card, .project-card, .timeline-item, .course-institution');
     
     animateElements.forEach(el => {
         el.style.opacity = '0';
@@ -183,6 +183,28 @@ if (skillsSection) {
     skillsObserver.observe(skillsSection);
 }
 
+// Courses animation on scroll
+const coursesSection = document.querySelector('.courses');
+let coursesAnimated = false;
+
+const coursesObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting && !coursesAnimated) {
+            const courseCards = document.querySelectorAll('.course-institution');
+            courseCards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.style.animation = 'slideInUp 0.6s ease forwards';
+                }, index * 200);
+            });
+            coursesAnimated = true;
+        }
+    });
+}, { threshold: 0.3 });
+
+if (coursesSection) {
+    coursesObserver.observe(coursesSection);
+}
+
 // Add CSS animation keyframes dynamically
 const style = document.createElement('style');
 style.textContent = `
@@ -208,7 +230,7 @@ style.textContent = `
     
     .nav-link.active {
         color: var(--primary-color);
-        background-color: rgba(108, 92, 231, 0.1);
+        background-color: rgba(37, 99, 235, 0.1);
     }
 `;
 document.head.appendChild(style);
