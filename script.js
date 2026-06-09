@@ -50,7 +50,7 @@ window.addEventListener('scroll', () => {
 
 // Typing animation for hero section
 const typedTextSpan = document.querySelector('.typed-text');
-const textArray = ['Desenvolvedor Backend', 'Estudante de ADS', 'Vendedor Junior'];
+const textArray = ['Desenvolvedor Backend', 'Formado em ADS', 'Analista de Suporte'];
 const typingDelay = 200;
 const erasingDelay = 100;
 const newTextDelay = 2000;
